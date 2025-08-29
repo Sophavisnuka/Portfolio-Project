@@ -107,3 +107,146 @@ button {
         }
     }
 }
+
+/* Responsive Design - Mobile and Tablet */
+
+/* Tablet styles (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 25px 5rem;
+        
+        nav {
+            gap: 3rem;
+        }
+    }
+    
+    .project {
+        padding: 60px 5rem;
+        
+        .project-container {
+            gap: 20px;
+            
+            .project-card {
+                min-width: 280px;
+                max-width: 350px;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+/* Mobile styles (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 2rem;
+        flex-direction: column;
+        gap: 1rem;
+        
+        h2 {
+            font-size: 1.5rem;
+        }
+        
+        nav {
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            a {
+                font-size: 14px;
+            }
+        }
+        
+        button {
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+    }
+    
+    .project {
+        padding: 40px 2rem;
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        
+        .project-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            
+            .project-card {
+                width: 100%;
+                max-width: 400px;
+                padding: 20px;
+                
+                h3 {
+                    font-size: 1.2rem;
+                    margin-bottom: 12px;
+                }
+                
+                p {
+                    font-size: 0.9rem;
+                    margin-bottom: 15px;
+                    line-height: 1.5;
+                }
+                
+                a {
+                    padding: 8px 16px;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+/* Small mobile styles (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px 1rem;
+        
+        h2 {
+            font-size: 1.3rem;
+        }
+        
+        nav {
+            gap: 1.5rem;
+            
+            a {
+                font-size: 13px;
+            }
+        }
+    }
+    
+    .project {
+        padding: 30px 1rem;
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+        
+        .project-container {
+            gap: 15px;
+            
+            .project-card {
+                padding: 18px;
+                
+                h3 {
+                    font-size: 1.1rem;
+                    margin-bottom: 10px;
+                }
+                
+                p {
+                    font-size: 0.85rem;
+                    margin-bottom: 12px;
+                }
+                
+                a {
+                    padding: 7px 14px;
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}

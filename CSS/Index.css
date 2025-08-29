@@ -244,3 +244,292 @@ button {
         margin-left: 50px;
     }
 }
+
+/* Responsive Design - Mobile and Tablet */
+
+/* Tablet styles (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 25px 5rem;
+        
+        nav {
+            gap: 3rem;
+        }
+    }
+    
+    .heroSection {
+        padding: 0px 5rem;
+        flex-direction: column;
+        height: auto;
+        gap: 3rem;
+        text-align: center;
+        
+        .mainText {
+            order: 2;
+        }
+        
+        .myImage {
+            order: 1;
+            
+            img {
+                width: 15rem;
+            }
+        }
+    }
+    
+    .about {
+        padding: 3rem 5rem;
+        
+        .card {
+            flex-direction: column;
+            gap: 2rem;
+            
+            .cardText {
+                text-align: center;
+            }
+            
+            .cardComponent {
+                justify-content: center;
+                
+                .cardDetail {
+                    width: 15rem;
+                }
+            }
+        }
+    }
+    
+    .project {
+        padding: 60px 5rem;
+        
+        .project-container {
+            gap: 20px;
+            
+            .project-card {
+                min-width: 280px;
+                max-width: 350px;
+            }
+        }
+    }
+}
+
+/* Mobile styles (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 2rem;
+        flex-direction: column;
+        gap: 1rem;
+        
+        h2 {
+            font-size: 1.5rem;
+        }
+        
+        nav {
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            a {
+                font-size: 14px;
+            }
+        }
+        
+        button {
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+    }
+    
+    .heroSection {
+        padding: 2rem;
+        gap: 2rem;
+        
+        .mainText {
+            h1 {
+                font-size: 32px;
+            }
+            
+            h3 {
+                font-size: 18px;
+            }
+            
+            p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+            
+            .buttonContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                button {
+                    margin-left: 0 !important;
+                    width: 100%;
+                }
+            }
+        }
+        
+        .myImage {
+            img {
+                width: 12rem;
+            }
+        }
+    }
+    
+    .about {
+        padding: 2rem;
+        
+        h2 {
+            font-size: 32px;
+        }
+        
+        .card {
+            margin-top: 50px;
+            padding: 15px;
+            
+            .cardComponent {
+                .cardDetail {
+                    width: 100%;
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+    
+    .project {
+        padding: 40px 2rem;
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        .project-container {
+            flex-direction: column;
+            align-items: center;
+            
+            .project-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    }
+    
+    .footer {
+        p {
+            margin-left: 20px;
+            font-size: 14px;
+        }
+    }
+}
+
+/* Small mobile styles (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px 1rem;
+        
+        h2 {
+            font-size: 1.3rem;
+        }
+        
+        nav {
+            gap: 1.5rem;
+            
+            a {
+                font-size: 13px;
+            }
+        }
+    }
+    
+    .heroSection {
+        padding: 1rem;
+        
+        .mainText {
+            h1 {
+                font-size: 28px;
+            }
+            
+            h3 {
+                font-size: 16px;
+            }
+            
+            p {
+                font-size: 13px;
+            }
+        }
+        
+        .myImage {
+            img {
+                width: 10rem;
+            }
+        }
+    }
+    
+    .about {
+        padding: 1.5rem;
+        
+        h2 {
+            font-size: 28px;
+        }
+        
+        .banner {
+            margin-top: 20px;
+        }
+        
+        .card {
+            margin-top: 30px;
+            padding: 10px;
+            
+            .cardComponent {
+                .cardDetail {
+                    padding: 8px;
+                    
+                    div {
+                        h1 {
+                            font-size: 16px;
+                        }
+                        
+                        p {
+                            font-size: 11px;
+                        }
+                        
+                        button {
+                            padding: 8px 15px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .project {
+        padding: 30px 1rem;
+        
+        h1 {
+            font-size: 1.8rem;
+        }
+        
+        .project-container {
+            .project-card {
+                padding: 20px;
+                
+                h3 {
+                    font-size: 1.2rem;
+                }
+                
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    
+    .footer {
+        padding: 20px 0px;
+        
+        p {
+            margin-left: 15px;
+            font-size: 13px;
+        }
+    }
+}
